@@ -1,0 +1,13 @@
+.accordionTitle{
+    display: flex;
+    justify-content: space-between;
+    color: #FFFFFF;
+    background-color: #FF6060;
+    font-family: "Montserrat";
+}
+
+.accordionContent{
+    color: #FF6060;
+    background-color: #F6F6F6;
+    font-family: "Montserrat";
+}
