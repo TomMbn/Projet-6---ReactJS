@@ -1,0 +1,17 @@
+.logements{
+    display: flex;
+    justify-content: center;
+    margin: 43px 100px 0px;
+    padding: 56px 50px;
+    border-radius: 25px;
+    background-color: #F7F7F7;
+}
+.logementList{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    list-style: none;
+    padding-left: 0;
+}
+
+
