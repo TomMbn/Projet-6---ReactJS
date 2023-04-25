@@ -1,3 +1,7 @@
+.accordionWrapper{
+    border-collapse: collapse;
+}
+
 .accordionTitle{
     display: flex;
     justify-content: space-between;

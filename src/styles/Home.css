@@ -1,0 +1,39 @@
+
+.logementList{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    list-style: none;
+    column-gap: 60px;
+    margin: 43px 100px 0px;
+    padding: 56px 50px;
+    background-color: #f7f7f7;
+    border-radius: 25px;
+}
+
+.logementList a{
+    width: 30%;
+    margin-bottom: 50px;
+}
+
+@media screen and (max-width : 768px) {
+    .logements{
+    margin: 0px;
+    padding: 0px;
+}
+    .logementList{
+        margin: 0px;
+        padding: 0px;
+        background-color:#ffffff;
+    }
+    .logementList a{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (max-width : 768px){
+    .homePage .banner{
+        height: 111px;
+    }
+}

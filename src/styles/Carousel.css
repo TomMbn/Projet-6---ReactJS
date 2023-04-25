@@ -1,0 +1,61 @@
+.carouselWrapper{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.galleryImage{
+    width: 100%;
+    border-radius: 25px;
+    height: 415px;
+    object-fit: cover;
+}
+
+.carousel-image{
+    position: relative;
+    width: 100%;
+}
+
+.carousel-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    outline: none;
+}
+
+.arrow-left{
+    left: 20px;
+}
+
+.arrow-right{
+    right: 20px;
+}
+
+.counterSlide{
+    position: absolute;
+    bottom: 25px;
+    left: 49%;
+    font-size: 18px;
+    font-weight: 500;
+    font-family: "Montserrat";
+    color: #FFFFFF;
+}
+
+@media screen and (max-width : 768px){
+    .carousel-image .carousel-arrow img{
+        width: 11px;
+        height: 20px
+    }
+
+    .counterSlide{
+        display: none;
+    }
+
+    .galleryImage{
+        height: 255px;
+        border-radius: 10px;
+    }
+}

@@ -1,21 +1,46 @@
-.accordion{
+.aboutPage .accordion{
     width: 70%;
     margin: 30px auto 150px;
     
 }
-.accordionWrapper{
+.aboutPage .accordionWrapper{
     margin-bottom: 30px;
 }
-.accordionTitle{
-    padding: 6px 18px;
+.aboutPage .accordionTitle{
+    padding: 10px 18px;
     font-size: 24px;
     font-weight: 500;
     border-radius: 5px;
 }
 
-.accordionContent{
+.aboutPage .accordionContent{
     padding: 25px;
     font-size: 24px;
     border-radius: 5px;
     font-weight: 400;
+}
+
+@media screen and (max-width : 768px){
+    .aboutPage .accordion{
+        width: 100%;
+    }
+    
+    .aboutPage .accordionWrapper{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .aboutPage .accordionTitle{
+        font-size: 13px;
+        padding: 5px 10px;
+    }
+
+    .aboutPage .accordionTitle img{
+        width: 16px;
+        height: 10px;
+    }
+    
+    .aboutPage .accordionContent, .equipmentsList{
+        font-size: 12px;
+    }
 }

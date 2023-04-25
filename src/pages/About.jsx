@@ -1,6 +1,8 @@
-import "../styles/BannerAbout.css"
-import "../styles/About.css"
+import "../styles/About.css";
 import Accordion from "../components/Accordion";
+import Banner from "../components/Banner";
+import BannerImage from "../assets/kalen-emsley-Bkci_8qcdvQ-unsplash2.jpg"
+
 
 function About(){
     const AccordionInfo = [
@@ -24,10 +26,10 @@ function About(){
     ];
     return(
     <div className="aboutPage">
-        <div className="bannerAbout"></div>
+        <Banner cover={BannerImage}/>
         <div className="accordion"> 
             {AccordionInfo.map(({title, content})=>(
-                <Accordion title={title} content={content}/>
+                <Accordion title={title} content={content} key={title} />
             ))}
         </div>
     </div>

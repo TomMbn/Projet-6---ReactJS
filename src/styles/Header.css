@@ -8,9 +8,36 @@
 
 .Header nav a{
     margin-left: 57px;
-    text-decoration: none;
     font-size: 24px;
     font-weight: 500;
     color: #FF6060;
     font-family: "Montserrat";
+}
+
+.Header nav a:not(.active){
+    text-decoration: none;
+}
+
+@media screen and (max-width : 768px){
+    .Header{
+        margin: 20px 0px;
+        padding: 0px 20px;
+    }
+
+    .Header img{
+        width: 40%;
+    }
+
+    .Header nav{
+        display: flex;
+        justify-content: flex-end;
+        width: 40%;
+        
+    }
+
+    .Header nav a{
+        font-size: 12px;
+        margin-left: 10px;
+        text-transform: uppercase;
+    }
 }

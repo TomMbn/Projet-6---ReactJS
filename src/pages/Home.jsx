@@ -1,44 +1,20 @@
 import Banner from "../components/Banner";
 import Logement from "../components/Logement";
 import BannerImage from "../assets/eric-muhr-P_XxsdVgtpQ-unsplash.jpg"
-import { useEffect, useState } from "react";
-import "../styles/Logements.css";
+import "../styles/Home.css";
+import datas from "../datas/logements.json"
 
 
 
 function Home(){
 
-    const [data, setData]= useState([]);
-
-    const getData=()=>{
-        fetch('logements.json'
-        ,{
-          headers : { 
-            'Content-Type': 'application/json',
-            'Accept': 'application/json'
-           }
-        }
-        )
-          .then(function(response){
-            
-            return response.json();
-          })
-          .then(function(myJson) {
-            
-            setData(myJson)
-          });
-      }
-      useEffect(()=>{
-        getData()
-      },[])
-      
     return(
-    <div>
-        <Banner cover={BannerImage}/>
+    <div className="homePage">
+        <Banner cover={BannerImage} text="Chez vous, partout et ailleurs"/>
         <div className="logements">
           <ul className="logementList">
-            {data.map((logement)=> (
-                <Logement
+            {datas.map((logement)=> (
+                <Logement key={logement.id}
                   id = {logement.id}
                   name = {logement.title}
                   cover={logement.cover}
