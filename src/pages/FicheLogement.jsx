@@ -25,6 +25,8 @@ function FicheLogement(){
         );
       }
 
+    const [lastname, firstname] = logement.host.name.split(' ')
+
     return(
         <div className="logementPage">
             <Carousel gallery={logement.pictures}/>
@@ -38,7 +40,10 @@ function FicheLogement(){
                 </div>
                 <div className="hostRatingWrapper">
                     <div className="hostInfo">
-                        <h2>{logement.host.name}</h2>
+                        <div className="hostName">
+                            <h2>{lastname}</h2>
+                            <h2>{firstname}</h2>
+                        </div>
                         <img src={logement.host.picture} alt="Photo de profil"/> 
                     </div>
                     <div className="rating">
