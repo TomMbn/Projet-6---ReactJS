@@ -4,7 +4,7 @@ import Carousel from "../components/Carousel";
 import "../styles/FicheLogement.css";
 import Accordion from "../components/Accordion";
 import Rating from "../components/Rating";
-import Error from "../components/Error";
+import Error from "./Error";
 
 function FicheLogement(){
     const { LogementId } = useParams();
